@@ -13,7 +13,7 @@ import { AuthModule, OidcConfigService, LogLevel } from 'angular-auth-oidc-clien
 export function configureAuth(oidcConfigService: OidcConfigService): any {
   return () =>
       oidcConfigService.withConfig({
-        stsServer: 'http://localhost:5000',
+        stsServer: 'https://dev-apmf-federation-gateway.australiaeast.cloudapp.azure.com',
         redirectUrl: 'http://localhost:4200/',
         postLogoutRedirectUri: 'http://localhost:4200/',
         clientId: 'PicklesOidcCompatible-local',
